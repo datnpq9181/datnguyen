@@ -5,7 +5,7 @@ addons.setConfig({
   theme: {
     ...themes.dark,
     brandImage: 'https://hamishw.com/icon.svg',
-    brandTitle: 'Dat Nguyen Components',
-    brandUrl: 'https://dat.pro.vn',
+    brandTitle: 'WeDev Components',
+    brandUrl: 'https://wedev.mobi',
   },
 });

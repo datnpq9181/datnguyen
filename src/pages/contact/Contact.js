@@ -19,6 +19,7 @@ export const Contact = () => {
   const errorRef = useRef();
   const email = useFormInput('');
   const message = useFormInput('');
+  const budget = useFormInput('');
   const [sending, setSending] = useState(false);
   const [complete, setComplete] = useState(false);
   const [statusError, setStatusError] = useState('');
@@ -79,7 +80,7 @@ export const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
+              <DecoderText text="Discuss about your needs" start={status !== 'exited'} delay={300} />
             </Heading>
             <Divider
               className={styles.divider}
@@ -96,6 +97,17 @@ export const Contact = () => {
               type="email"
               maxLength={512}
               {...email}
+            />
+            <Input
+              required
+              className={styles.input}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS, initDelay)}
+              autoComplete="email"
+              label="Your Bugget (in US$)"
+              type="number"
+              maxLength={512}
+              {...budget}
             />
             <Input
               required
@@ -160,7 +172,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I’ll get back to you within a couple days, sit tight
+              We’ll get back to you within a couple hours, sit tight
             </Text>
             <Button
               secondary

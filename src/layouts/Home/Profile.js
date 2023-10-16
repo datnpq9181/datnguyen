@@ -17,26 +17,12 @@ import styles from './Profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="WeDev Tech Solution LLC" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Dat Nguyen, currently residing in the vibrant city of Ho Chi Minh. If you've
-      come across my profile here, it's because I proudly serve as a Front-end Developer
-      within the dynamic <Link href="https://www.wedev.mobi">WeDev Team</Link>. What is
-      this: <Link href="/uses">uses page</Link>.
+      A quality outsourcing company in Vietnam. Check out what stack we use for your project<Link href="/uses"> from here</Link>.
     </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Truth be told, I'm not just a Front-end Developer; I'm also a fervent entrepreneur
-      in the realm of technology. While programming holds a special place in my skill set,
-      it's not the only string to my bow. I possess a keen understanding of how to
-      identify and initiate promising opportunities.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Rest assured, I'm well-versed in the art of creating and pursuing opportunities. My
-      passion for entrepreneurship fuels my drive to make meaningful contributions in the
-      tech landscape. If you're interested in collaborating or learning more, feel free to
-      reach out!
-    </Text>
+    
   </Fragment>
 );
 
@@ -67,7 +53,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="/contact"
                 icon="send"
               >
-                Send me a message
+                Give us your needs
               </Button>
             </div>
             <div className={styles.column}>

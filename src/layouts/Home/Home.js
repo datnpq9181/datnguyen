@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Web Designer', 'Video Maker'];
+const disciplines = ['Software Developer', 'Web Designer', 'Solution Architect', 'Problem Solver'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,7 +68,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Entrepreneur + Developer"
+        title="WeDev Team"
         description="Thanks Hamish Williams for this fantastic template."
       />
       <Intro

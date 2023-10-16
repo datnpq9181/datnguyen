@@ -1,9 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://dat.pro.vn",
-  "description": "Portfolio site for Dat Nguyen",
-  "repository": "https://github.com/datnpq9181/portfolio-dat.git",
+  "homepage": "https://wedev.mobi",
+  "description": "WeDev Tech Solution LLC - A quality outsourcing company",
+  "repository": "https://github.com/datnpq9181/portfolio-wedev.git",
   "author": "Dat Nguyen <hello@dat.pro.vn>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
